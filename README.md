@@ -3,7 +3,7 @@
 ## Linear Regression to Predict MPG
 A multiple linear regression based on each vehicle's MPG and its length, weight, spoiler angle, ground clearance and AWD type has determined that vehicle's length and ground clearance provided a non-random amount of variance to the MPG values according to the p value. Please refer to the following figure for more details.
 
-![lm predicting mpg](images/deliverable1.PNG)
+![lm predicting mpg](images/deliverable1.png)
 
 The slope of the linear model is not zero because the parameters of the linear regression model for vehicle_length and ground_clearance are non-zero.
 
