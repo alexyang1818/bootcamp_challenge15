@@ -11,3 +11,10 @@ total_summary <- coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance
 print(total_summary)
 lot_summary <- coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 print(lot_summary)
+
+# one-sample t-test
+t.test(coil$PSI, mu=1500)
+t.test(subset(coil$PSI, coil$Manufacturing_Lot=="Lot1"), mu=1500)
+t.test(subset(coil$PSI, coil$Manufacturing_Lot=="Lot2"), mu=1500)
+t.test(subset(coil$PSI, coil$Manufacturing_Lot=="Lot3"), mu=1500)
+
